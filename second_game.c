@@ -1,0 +1,63 @@
+//snake ,water ,gun game
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+int main()
+{
+    int player,computer=(rand()%3);//random number 0 to 2
+    /*
+     0--->snake
+     1--->water
+     2--->Gun
+    */
+printf("choose 0 for snake,1 for water,2 for gun\n");
+scanf("%d",&player);
+printf("%d\n",computer);
+if(player==0 && computer==0)
+{
+printf("Its a draw\n");
+
+}
+else if(player==0 && computer==1)
+{
+    printf("you win\n");
+    
+}
+else if(player==0 && computer==2)
+{
+   printf("you lose\n");
+    
+}
+else if(player==1 && computer==0)
+{
+    printf("you lose\n");
+}
+else if(player==1 && computer==1)
+{
+    printf("Its a draw\n");
+}
+else if(player==1 && computer==2)
+{
+    printf("you win\n");
+}
+else if(player==2 && computer==0)
+{
+        printf("you win\n");
+}
+else if(player==2 && computer==1)
+{
+    printf("you lose\n");
+}
+else if(player==2 && computer==2)
+{
+    printf("Its a draw\n");
+}
+else
+{
+    printf("something went wrong\n");
+    
+}
+
+ return 0;
+}
